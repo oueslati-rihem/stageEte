@@ -18,10 +18,10 @@ services:
     image: rihemoueslati/imagefinal
     restart: on-failure
     ports:
-      - 8089:8089
+      - 8081:8081
     environment:
       SPRING_APPLICATION_JSON: '{
-        "spring.datasource.url" : "jdbc:mysql://mysqldb:3306/stageete2024?createDatabaseIfNotExist=true",
+        "spring.datasource.url" : "jdbc:mysql://localhost:3306/stageete2024?&createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC",
         "spring.datasource.username": "root",
         "spring.datasource.password": "",
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
